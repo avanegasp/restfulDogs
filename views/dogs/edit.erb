@@ -1,0 +1,8 @@
+<h1>Vamos a editar a <%= @dogs.name %></h1>
+
+
+<form action="/dogs/<%= @dogs.id %>" method="post">
+  <input type="hidden" name="_method" value="PATCH">
+  <input type="text" name="breed">
+  <input type="submit" value="editar">
+</form>
